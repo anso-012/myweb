@@ -1,6 +1,6 @@
 .home_container {
 
-  background: url("images\\sky.jpg");
+  background: url("background.png");
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
