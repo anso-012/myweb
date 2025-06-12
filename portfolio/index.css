@@ -1,0 +1,18 @@
+.home_container {
+
+  background: url("images\\sky.jpg");
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width:1200px;
+  height: 600px;
+  margin: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 15px solid white;
+  padding: 30px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
