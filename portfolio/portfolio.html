@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minseok Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">홈</a></li>
+        <li><a href="#works">작업</a></li>
+        <li><a href="#profile">프로필</a></li>
+        <li><a href="#contact">문의</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">민석 MINSEOK</div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="works" class="projects">
+    <h2>📁 나의 작업들</h2>
+    <div class="card-grid">
+
+      <!-- 카드 예시 -->
+      <div class="card" onclick="openModal(1)">
+        <div class="card-image"></div>
+        <div class="card-overlay">
+          <p>프로젝트 제목 1</p>
+        </div>
+      </div>
+
+      <div class="card" onclick="openModal(2)">
+        <div class="card-image"></div>
+        <div class="card-overlay">
+          <p>프로젝트 제목 2</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal (상세보기) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>프로젝트 상세</h3>
+      <p>여기에 프로젝트 설명이 들어갑니다.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>📬 협업 제안하기</h2>
+    <form>
+      <input type="text" placeholder="이름" required />
+      <input type="email" placeholder="이메일" required />
+      <textarea placeholder="메시지" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
