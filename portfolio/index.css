@@ -1,18 +1,102 @@
-.home_container {
+/* 전체 스타일 기본값 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #e7e7e7;
+}
 
-  background: url("background.png");
+/* 메인 컨테이너 */
+.home_container {
+  background: url("mc.png") no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 
-  width:1200px;
-  height: 600px;
-  margin: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 15px solid white;
+  width: 500px;
+  height: 300px;
+  margin: 10px auto;
+  border: 0px solid white;
   padding: 30px;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 10px;
+}
+
+
+/* 이미지 섹션 */
+.image img {
+  width: 150px;
+  border-radius: 30px;
+}
+
+/* 이름 (So Yeong) 스타일 */
+.leename {
+  margin: 0;
+  padding: 0;
+}
+
+.LEEname {
+  font-size: 48px;
+  color: #ff69b4;  /* 원하는 색상으로 바꿔도 돼 */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* 메뉴 리스트 */
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.list a:hover {
+  color: #ff69b4;
+}
+
+/* 외부 링크 (Github, Velog) */
+.url ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.url li {
+  margin-bottom: 10px;
+}
+
+.github,
+.velog {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.github:hover,
+.velog:hover {
+  transform: scale(1.1);
+}
+
+/* 상단 바 스타일 */
+.top_bar {
+  background: url("mc.png") no-repeat center center;
+  background-size: cover;
+  height: 60px;
+  width: 560px; /* home_container보다 좌우 padding 고려해서 더 넓게 */
+  margin: 100px auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
 }
