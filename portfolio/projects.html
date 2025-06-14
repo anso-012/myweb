@@ -6,3 +6,72 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+
+  <!-- 흐린 배경용 전체 래퍼 -->
+  <div class="background-blur">
+    <!-- Projects 콘텐츠 박스 -->
+    <div class="projects_box">
+      <!-- 제목을 클릭하면 메인 페이지로 이동합니다. -->
+      <a href="index.html" class="noline"><h2>Projects</h2></a>
+      
+      <p class="project-intro">
+        제가 참여하고 진행했던 프로젝트들입니다.<br>
+        이미지를 클릭하면 전체 화면으로 보실 수 있습니다.
+      </p>
+
+      <!-- 프로젝트들이 나열되는 갤러리 -->
+      <div class="project-gallery">
+
+        <!-- 프로젝트 1 -->
+        <div class="project-item">
+          <h3>첫 번째 프로젝트</h3>
+          <p>이 프로젝트는 어떤 목적으로 만들어졌고, 어떤 기술을 사용했는지 등에 대한 간단한 설명입니다.</p>
+          <!-- 이미지를 클릭하면 #img1 라이트박스가 열립니다. -->
+          <a href="#img1" class="project-image-wrapper">
+            <div class="project-image">이미지 1</div>
+          </a>
+        </div>
+        
+        <!-- 프로젝트 2 -->
+        <div class="project-item">
+          <h3>두 번째 프로젝트</h3>
+          <p>리버싱 기술을 활용하여 특정 프로그램의 동작을 분석하고 개선한 프로젝트입니다.</p>
+          <a href="#img2" class="project-image-wrapper">
+            <div class="project-image">이미지 2</div>
+          </a>
+        </div>
+        
+        <!-- 프로젝트 3 -->
+        <div class="project-item">
+          <h3>세 번째 프로젝트</h3>
+          <p>프론트엔드 개발 기술을 익히며 만든 개인 포트폴리오 웹사이트입니다. 지금 보고 계신 바로 이 사이트입니다. 😄</p>
+          <a href="#img3" class="project-image-wrapper">
+            <div class="project-image">이미지 3</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- --- 라이트박스 섹션 --- -->
+  <!-- 클릭 시 나타날 전체 화면 이미지들 -->
+
+  <!-- 이미지 1 라이트박스 -->
+  <a href="#" class="lightbox" id="img1">
+    <span class="full-image-placeholder">1번 프로젝트 전체 이미지</span>
+  </a>
+
+  <!-- 이미지 2 라이트박스 -->
+  <a href="#" class="lightbox" id="img2">
+    <span class="full-image-placeholder">2번 프로젝트 전체 이미지</span>
+  </a>
+
+  <!-- 이미지 3 라이트박스 -->
+  <a href="#" class="lightbox" id="img3">
+    <span class="full-image-placeholder">3번 프로젝트 전체 이미지</span>
+  </a>
+
+</body>
+</html>
