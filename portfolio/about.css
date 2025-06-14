@@ -1,24 +1,43 @@
-.container1 {
-  width:350px;
-  height: 350px;
-  margin: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid white;
-  padding: 30px;
-  border-radius: 50px;
-  margin-top: 0;
+/* 배경 흐림 처리용 */
+.background-blur {
+  background: url("images/IMG_5300.JPG") no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(0px); /* 전체 배경에 블러 효과는 이걸로 조정 가능 */
+  padding: 80px 0;
 }
 
-.container2{
-  width:350px;
-  height: 350px;
-  margin: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid white;
-  padding: 30px;
-  border-radius: 50px;
-  gap: 0 0 ;
-  margin-top: 0;
+/* About 페이지 전체 박스 */
+.about_box {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.85); /* 흰색+약간 투명 */
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+}
+
+/* 링크 밑줄 제거 */
+.noline {
+  text-decoration: none;
+  color: #107415;
+}
+
+/* 두 개의 컨테이너 나란히 정렬 */
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* 프로필/Like 박스 공통 스타일 */
+.container1, .container2 {
+  flex: 1 1 300px;
+  background-color: white;
+  border: 5px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 }
