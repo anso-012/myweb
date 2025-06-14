@@ -1,14 +1,27 @@
+/* 상단 바 스타일 */
+.top_bar {
+  background: url("u.png") no-repeat center center;
+  background-size: cover;
+  height: 60px;
+  width: 560px; /* home_container보다 좌우 padding 고려해서 더 넓게 */
+  margin: 100px auto 0 auto;
+  border-radius: 0px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
 /* 전체 스타일 기본값 */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #e7e7e7;
+  background: url("IMG_5300.JPG") no-repeat center center;
+  background-size: cover; 
+  background-attachment: fixed;
 }
 
 /* 메인 컨테이너 */
 .home_container {
-  background: url("mc.png") no-repeat center center;
+  background: url("back.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-flow: row wrap;
@@ -21,25 +34,26 @@ body {
   border: 0px solid white;
   padding: 30px;
   box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 
 /* 이미지 섹션 */
 .image img {
-  width: 150px;
+  width: 200px;
   border-radius: 30px;
+  margin-bottom: 120px;
 }
 
 /* 이름 (So Yeong) 스타일 */
 .leename {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
 .LEEname {
   font-size: 48px;
-  color: #ff69b4;  /* 원하는 색상으로 바꿔도 돼 */
+  color: #107415;  /* 원하는 색상으로 바꿔도 돼 */
   text-decoration: none;
   font-weight: 700;
 }
@@ -65,7 +79,7 @@ body {
 }
 
 .list a:hover {
-  color: #ff69b4;
+  color: #107415;
 }
 
 /* 외부 링크 (Github, Velog) */
@@ -88,15 +102,4 @@ body {
 .github:hover,
 .velog:hover {
   transform: scale(1.1);
-}
-
-/* 상단 바 스타일 */
-.top_bar {
-  background: url("mc.png") no-repeat center center;
-  background-size: cover;
-  height: 60px;
-  width: 560px; /* home_container보다 좌우 padding 고려해서 더 넓게 */
-  margin: 100px auto 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
 }
