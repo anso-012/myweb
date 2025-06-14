@@ -1,6 +1,6 @@
 /* 상단 바 스타일 */
 .top_bar {
-  background: url("u.png") no-repeat center center;
+  background: url("images/u.png") no-repeat center center;
   background-size: cover;
   height: 60px;
   width: 560px; /* home_container보다 좌우 padding 고려해서 더 넓게 */
@@ -14,14 +14,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  background: url("IMG_5300.JPG") no-repeat center center;
+  background: url("images/IMG_5300.JPG") no-repeat center center;
   background-size: cover; 
   background-attachment: fixed;
 }
 
 /* 메인 컨테이너 */
 .home_container {
-  background: url("back.png") no-repeat center center;
+  background: url("images/back.png") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-flow: row wrap;
@@ -101,5 +101,16 @@ body {
 
 .github:hover,
 .velog:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
   transform: scale(1.1);
 }
