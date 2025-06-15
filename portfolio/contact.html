@@ -2,7 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Me</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+  <!-- 흐린 배경용 전체 래퍼 -->
+  <div class="background-blur">
+    <!-- Contact 콘텐츠 박스 -->
+    <div class="contact_box">
+      <!-- 제목을 클릭하면 메인 페이지로 이동합니다. -->
+      <a href="index.html" class="noline"><h2>Contact Me</h2></a>
+      
+      <!-- 이메일 주소 -->
+      <p class="contact-email">
+        E-mail: anso.young@gmail.com
+      </p>
+
+      <!-- 메시지 폼 -->
+      <form class="contact-form" action="#" method="post">
+        
+        <!-- Your E-mail 입력란 -->
+        <div class="form-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <!-- First Name / Last Name 입력란 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+        </div>
+        
+        <!-- Message 입력란 -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        
+        <!-- 전송 버튼 -->
+        <button type="submit" class="submit-btn">Send Message</button>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -128,14 +128,19 @@ color: #107415;
 
 /* 인스타, 블로그 링크 */
 .url ul {
-list-style: none;
-padding: 0;
-margin: 0;
-margin-top: -80px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -80px;
+  
+  /* 아이콘을 가로로 정렬하기 위해 추가 */
+  display: flex;
+  gap: 10px; /* 아이콘 사이의 간격 */
 }
 
 .url li {
-margin-bottom: 7px;
+  /* 세로 정렬을 위한 margin-bottom을 제거합니다. */
+  margin-bottom: 0;
 }
 
 .icon {
@@ -309,4 +314,100 @@ color: #107415;
   color: #555;
   border-radius: 10px;
   text-align: center;
+}
+
+
+/* contact 페이지 */
+/* ==============================================
+  Contact 페이지 스타일
+============================================== 
+*/
+
+/* Contact 페이지 전체 박스 */
+.contact_box {
+  max-width: 800px;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 상단 이메일 주소 스타일 */
+.contact-email {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* 연락 폼 스타일 */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 각 입력칸 사이의 간격 */
+}
+
+/* 입력칸 그룹 (라벨 + 입력 필드) */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* form-row 안에서 공간을 동일하게 차지 */
+}
+
+/* First/Last name을 위한 가로 정렬 */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* 라벨 스타일 */
+.contact-form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+/* 모든 입력 필드(input, textarea)의 공통 스타일 */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* 입력 필드에 포커스 되었을 때 */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #107415; /* 메인 컬러로 변경 */
+  box-shadow: 0 0 5px rgba(16, 116, 21, 0.3);
+}
+
+/* 전송 버튼 스타일 */
+.submit-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #107415; /* 메인 컬러 */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+/* 전송 버튼에 마우스를 올렸을 때 */
+.submit-btn:hover {
+  background-color: #0d5c11; /* 살짝 어두운 색으로 */
+  transform: translateY(-2px);
 }
